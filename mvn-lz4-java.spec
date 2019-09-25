@@ -4,7 +4,7 @@
 #
 Name     : mvn-lz4-java
 Version  : 1.4.0
-Release  : 3
+Release  : 4
 URL      : https://github.com/lz4/lz4-java/archive/1.4.0.tar.gz
 Source0  : https://github.com/lz4/lz4-java/archive/1.4.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar
@@ -15,6 +15,8 @@ Source5  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.
 Source6  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.pom
 Source7  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar
 Source8  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.pom
+Source9  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar
+Source10  : https://repo1.maven.org/maven2/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.pom
 Summary  : fast lossless compression algorithm library
 Group    : Development/Tools
 License  : Apache-2.0 BSD-2-Clause GPL-2.0
@@ -80,6 +82,12 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1/
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1
 cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -94,6 +102,8 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1/
 /usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.pom
 /usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar
 /usr/share/java/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.pom
+/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar
+/usr/share/java/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.pom
 
 %files license
 %defattr(0644,root,root,0755)
